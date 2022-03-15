@@ -6,7 +6,7 @@ import pandas as pd
 from progress.bar import Bar
 
 bifrost.goto(
-    r'C:/Users/supor/OneDrive/PowerBi/NFE'
+    r'PATH GOES HERE'
 )
 
 
@@ -37,7 +37,7 @@ def mk_frames(list):
     df = pd.DataFrame(l)
     bar.finish()
     df.to_csv(
-        r'C:/Users/supor/OneDrive/PowerBi/NFE/cancelamento/notas_canceladas.csv',
+        r'PATH GOES HERE/cancelfiles.csv',
         sep=";",
         encoding="utf8",
     )
@@ -46,7 +46,7 @@ def mk_frames(list):
 def exportCancelFiles():
 
     bifrost.goto(
-        r'C:/Users/supor/OneDrive/PowerBi/NFE/cancelamento'
+        r'PATH GOES HERE'
     )
 
     f = bifrost.filter_list(bifrost.list_files(), "-can.xml")
@@ -64,12 +64,12 @@ def exportCancelFiles():
 def run():
 
     exportCancelFiles()
-    bifrost.goto(r'C:/Users/supor/OneDrive/PowerBi/NFE/pending')
+    bifrost.goto(r'PATH GOES HERE')
     FILES_LIST = bifrost.filter_list(bifrost.list_files(), "-can.xml")
 
     def move_files():
-        ppd = r'C:/Users/supor/OneDrive/PowerBi/NFE/pending'
-        ccd = r'C:/Users/supor/OneDrive/PowerBi/NFE/cancelamento'
+        ppd = r'PATH GOES HERE'
+        ccd = r'PATH GOES HERE'
         with Bar(f'Importando notas canceladas', max=len(FILES_LIST), fill='#') as bar:
             for files in FILES_LIST:
                 shutil.copy(f'{ppd}/{files}', f'{ccd}/{files}')
