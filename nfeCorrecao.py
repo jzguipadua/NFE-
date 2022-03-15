@@ -6,7 +6,7 @@ import pandas as pd
 from progress.bar import Bar
 
 bifrost.goto(
-    r'C:/Users/supor/OneDrive/PowerBi/NFE'
+    r'PATH GOES HERE'
 )
 
 
@@ -37,7 +37,7 @@ def mk_frames(list):
     df = pd.DataFrame(l)
     bar.finish()
     df.to_csv(
-        r'C:/Users/supor/OneDrive/PowerBi/NFE/correcoes/cartas_de_correcao.csv',
+        r'PATH GOES HERE/NFE/correcoes/cartas_de_correcao.csv',
         sep=";",
         encoding="utf8",
     )
@@ -68,8 +68,8 @@ def run():
     FILES_LIST = bifrost.filter_list(bifrost.list_files(), "-procEventoNfe.xml")
 
     def move_files():
-        ppd = r'C:/Users/supor/OneDrive/PowerBi/NFE/pending'
-        ccd = r'C:/Users/supor/OneDrive/PowerBi/NFE/correcoes'
+        ppd = r'PATH GOES HERE/NFE/pending'
+        ccd = r'PATH GOES HERE/NFE/correcoes'
         with Bar(f'Importando cartas de correção', max=len(FILES_LIST), fill='#') as bar:
             for files in FILES_LIST:
                 shutil.copy(f'{ppd}/{files}', f'{ccd}/{files}')
