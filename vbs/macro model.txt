@@ -1,0 +1,4 @@
+Sub refresh()
+    ActiveWorkbook.RefreshAll
+    ActiveWorkbook.Save
+End Sub

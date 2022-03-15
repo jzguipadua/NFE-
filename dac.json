@@ -1,0 +1,9 @@
+{
+  "NFE_U": {
+    "path": "C:/Users/supor/OneDrive/PowerBi/Relatorios/Dados Resumidos",
+    "target": ["_total_ BRAE","_prod_ BRAE"]
+  },
+  "pedidos":{
+      "path:":"C:/Users/supor/OneDrive/PowerBi/Recursos"
+  }
+}
