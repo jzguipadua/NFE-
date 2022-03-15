@@ -6,7 +6,7 @@ import updatexlsQueries
 import os
 def exec():
     THISUSER = os.path.expanduser("~")
-    NFEPATH = os.path.join(THISUSER, "OneDrive/Powerbi/NFE/pending")
+    NFEPATH = os.path.join(THISUSER, "PATH GOES HERE")
     os.chdir(NFEPATH)
     nfe.run()
     nfeCan.run()
