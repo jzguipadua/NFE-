@@ -37,15 +37,12 @@ class BRAE(object):
     def p_companies():
         return {
             "empresa": {
-                "34362718000140": "BEAUTY SUPPLY",
-                "24868650000111": "BEAUTY BRAZIL",
-                "32779081000166": "SX COSMETICS",
-                "34362718000220": "QUIOSQUE SHOPPING PATIO HIGIENOPOLIS",
+                "NUMBER": "COMPANY NAME"                
             },
             "keys": {
-                "34362718000140": "baab610b1ab3630a209315b1236f624b9aeecad680a3139f60b3a136ccc9e5ba7ab9fccc",
-                "24868650000111": "48d7e4fbf73b2a81bd56f3de702ee26c4010963a7d61612c56df8cb4b42e1c31cde61a2e",
-                "32779081000166": "74faa69d03a650c3df171bdd92f7db05e04d1d36a19daa69009d7e7a318bfe0a886a1958",
+                "34362718000140": "#",
+                "24868650000111": "#",
+                "32779081000166": "#",
             },
         }
 
@@ -91,8 +88,8 @@ def sufix(file):
 
 def dropbox_path():
     cur_user = os.path.expanduser("~")
-    dropbox_folder = os.path.join(cur_user, "OneDrive")
-    nfe_total_f = os.path.join(dropbox_folder, "PowerBi/NFE/Total")
+    dropbox_folder = os.path.join(cur_user, "PATH GOES HERE")
+    nfe_total_f = os.path.join(dropbox_folder, "PATH GOES HERE")
     os.chdir(nfe_total_f)
     print(os.getcwd())
     delay(1)
@@ -100,9 +97,9 @@ def dropbox_path():
 
 def sumData_path():
     cur_user = os.path.expanduser("~")
-    dropbox_folder = os.path.join(cur_user, "OneDrive")
+    dropbox_folder = os.path.join(cur_user, "PATH GOES HERE")
     nfe_total_f = os.path.join(
-        dropbox_folder, "PowerBi/Relatorios/Dados Resumidos")
+        dropbox_folder, "PATH GOES HERE")
     os.chdir(nfe_total_f)
     print(os.getcwd())
     delay(1)
@@ -110,8 +107,8 @@ def sumData_path():
 
 def nfe_pendingFolder():
     cur_user = os.path.expanduser("~")
-    dropbox_folder = os.path.join(cur_user, "OneDrive")
-    nfe_total_f = os.path.join(dropbox_folder, "PowerBi/NFE/pending")
+    dropbox_folder = os.path.join(cur_user, "PATH GOES HERE")
+    nfe_total_f = os.path.join(dropbox_folder, "PATH GOES HERE")
     os.chdir(nfe_total_f)
     print(os.getcwd())
     delay(1)
