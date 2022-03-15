@@ -18,7 +18,7 @@ from progress.bar import Bar
                                                                                                                                                              
 
 THISUSER = os.path.expanduser("~")
-NFEPATH = os.path.join(THISUSER, "OneDrive/Powerbi/NFE")
+NFEPATH = os.path.join(THISUSER, "PATH GOES HERE")
 
 
 def delay(x):
