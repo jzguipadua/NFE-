@@ -35,7 +35,7 @@ class BRAE(object):
 
 EMPRESAS = BRAE().companies
 THISUSER = os.path.expanduser("~")
-NFEPATH = os.path.join(THISUSER, "OneDrive/Powerbi/NFE")
+NFEPATH = os.path.join(THISUSER, "PATH GOES HERE")
 bifrost.nfe_pendingFolder()
 PENDING_FILES = bifrost.filter_list(bifrost.list_files(), 'xml')
 
