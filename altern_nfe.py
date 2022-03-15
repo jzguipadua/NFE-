@@ -1,5 +1,5 @@
 #
-#todo                              UTILIZADO NO MOMENTO PARA GERAR MATRIZ DE NFE DAS NOTAS DE QUIOSQUE 
+#todo                              UTILIZADO NO MOMENTO PARA GERAR MATRIZ DE NFE DAS NOTAS ALTERNATIVAS 
 #!                                 ESTE MÓDULO NÃO SE APLICA PARA NOTAS DE ENTRADA
 from logging import exception
 from types import NoneType
