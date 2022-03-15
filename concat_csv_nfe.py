@@ -5,10 +5,10 @@ from progress.bar import Bar
 import math
 import numpy as np
 
-TARGET_FOLDERS = ['_SX COSMETICS','_BEAUTY SUPPLY','_BEAUTY BRAZIL','_COFERLY COSMETICA LTDA','_QUIOSQUE HIGIENOPOLIS','_QUIOSQUE MORUMBI']
+TARGET_FOLDERS = ['_NAMECOMPANY FILE']
 REF_FOLDERS = ['Total','Produtos']
 EXTENSION_PREF = {'Total':'-tot','Produtos':'-prod'}
-NFEPATH = 'OneDrive/PowerBi/NFE'
+NFEPATH = 'PATH GOES HERE'
 
 def df_csv(df, name):
     df.to_csv(name,sep='|', encoding='utf8')
