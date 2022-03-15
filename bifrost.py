@@ -40,9 +40,7 @@ class BRAE(object):
                 "NUMBER": "COMPANY NAME"                
             },
             "keys": {
-                "34362718000140": "#",
-                "24868650000111": "#",
-                "32779081000166": "#",
+                "COMPANY ID": "API KEY"                
             },
         }
 
